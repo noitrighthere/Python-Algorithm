@@ -1,0 +1,1 @@
+N = int(input())dp = [0] * 1000001       # dp배열 생성dp[1] = 1dp[2] = 2# N이 주어졌을 때 dp 계산 후 15746으로 나눈 후 나머지 출력for i in range(3, N+1):    dp[i] = (dp[i-1] + dp[i-2]) % 15746print(dp[N])
