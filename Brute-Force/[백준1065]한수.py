@@ -1,7 +1,6 @@
 N = int(input())    # 자연수 N 입력
 result = 0
 
-
 for i in range(1, N+1):
     # 1부터 99까지는 모두 한수
     if i < 100:
