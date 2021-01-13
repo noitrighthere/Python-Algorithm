@@ -11,4 +11,3 @@ def solution(x):
         return answer
     else:
         return False
-
