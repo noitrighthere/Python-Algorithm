@@ -19,4 +19,3 @@ while len(card) > 1:
     answer += (A+B)
     
 print(answer)
-
