@@ -5,4 +5,5 @@ for _ in range(T):
     temp = y - x
 
     count = 0       # 이동 횟수
-    move = 1
+    move = 1        # 
+    
