@@ -1,16 +1,11 @@
-S = input()
-cnt1 = 0    # 0으로 바뀌는 횟수
-cnt2 = 0    # 1로 바뀌는 횟수
-
-if S[0] == '0':
-    cnt1 = 1
-else:
-    cnt2 = 1
+S = input()     # 문자열 S를 입력
+temp = []       # 서로 다른 인덱스를 넣는 임시 배열
 
 for i in range(len(S)-1):
-    # '0'과 '1'로 바뀌는 횟수를 계산
+    # 앞뒤가 다른 인덱스면 temp에 넣음
     if S[i] != S[i+1]:
-        if S[i] == '0':
-            cnt1 += 1
-        else:
-            cnt2 += 1
+        temp.append(S[i])
+
+temp.append(S[-1])
+
+print(min(temp.count('1'), temp.count('0')))
