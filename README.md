@@ -14,3 +14,8 @@
 * Mathmatics
 * Sorting
 * String
+* Backtraking
+* Implement
+* Hashing
+* Search
+* Stack:Queue
