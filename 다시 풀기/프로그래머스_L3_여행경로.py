@@ -15,8 +15,6 @@ def solution(tickets):
     for dept, arr in sorted(tickets):
         graph[dept].append(arr)
 
-    print(sorted(tickets))
-
     def DFS(dept):
         while graph[dept]:
             DFS(graph[dept].pop(0))
@@ -26,4 +24,4 @@ def solution(tickets):
 
     return answer[::-1]
 
-print(solution(tickets))
+print(solution2(tickets))
